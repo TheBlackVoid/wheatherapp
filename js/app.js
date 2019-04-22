@@ -7,8 +7,6 @@ window.addEventListener('load', () =>{
     let tempratureSection = document.querySelector('.degree-section');
     const tempratureSpan = document.querySelector('.degree-section span')
 
-    let content = document.querySelector("h2");
-
     if(navigator.geolocation){
         navigator.geolocation.getCurrentPosition(position => {
            long = position.coords.longitude;
@@ -46,10 +44,8 @@ window.addEventListener('load', () =>{
         });
 
 
-       
-
-    } else {
-        content.textContent = "You need to allow us to check your location to display accurate data :("
+    } else if (!navigator.geolocation){
+        tempDescription.textContent = "We need to know your location to give you accurate data :("
     }
 
     function setIcons(icon, iconID){

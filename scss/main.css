@@ -65,4 +65,35 @@ body {
 .degree-section h2 {
   font-size: 3em;
 }
+
+#privacy {
+  font-size: 0.7em;
+  color: lightgrey;
+}
+
+p {
+  padding-top: 5em;
+}
+
+footer {
+  margin-top: 2%;
+  height: 10vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer p {
+  padding: 0;
+  padding: 0 .4em;
+}
+
+footer img {
+  height: 1em;
+  padding-top: 0.2em;
+}
 /*# sourceMappingURL=main.css.map */
